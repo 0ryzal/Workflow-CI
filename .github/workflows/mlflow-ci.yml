@@ -32,10 +32,10 @@ jobs:
         run: |
           cd MLProject
           # Run MLflow project
-          mlflow run . --env-manager local
+          mlflow run . --env-manager local --experiment-name MSML_Basic_Breast_Cancer
 
       - name: Save Artifacts to GitHub Actions
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: mlruns-artifacts
           path: MLProject/mlruns/
