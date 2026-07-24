@@ -35,7 +35,7 @@ jobs:
           mlflow run . --env-manager local
 
       - name: Save Artifacts to GitHub Actions
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: mlruns-artifacts
           path: MLProject/mlruns/
