@@ -1,0 +1,15 @@
+name: msml-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - python-dotenv
+    - pandas
+    - numpy
+    - scikit-learn
+    - mlflow==2.19.0
+    - matplotlib
+    - seaborn
+    - joblib

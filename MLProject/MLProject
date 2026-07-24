@@ -1,0 +1,7 @@
+name: MSML_Basic_Breast_Cancer
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    command: "python modelling.py"
