@@ -48,7 +48,7 @@ jobs:
           echo "Building Docker image for run ID: $RUN_ID"
           
           # Build Docker image using mlflow build-docker
-          mlflow models build-docker -m "runs:/$RUN_ID/model" -n 0ryzal/msml-model:latest
+          mlflow models build-docker --env-manager local -m "runs:/$RUN_ID/model" -n 0ryzal/msml-model:latest
           
           # Note: To push to Docker Hub, you would normally run:
           # echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
